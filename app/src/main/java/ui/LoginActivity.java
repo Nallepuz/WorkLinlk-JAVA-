@@ -40,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                 case OK:
                     tvError.setVisibility(View.GONE);
                     Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                    intent.putExtra("username", user);
                     startActivity(intent);
                     finish();
                     break;
@@ -56,6 +57,12 @@ public class LoginActivity extends AppCompatActivity {
                     tvError.setText("Usuario o contraseña incorrectos");
                     tvError.setVisibility(View.VISIBLE);
             }
+        });
+
+        TextView textRegister = findViewById(R.id.textRegister);
+        textRegister.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(intent);
         });
     }
 }
