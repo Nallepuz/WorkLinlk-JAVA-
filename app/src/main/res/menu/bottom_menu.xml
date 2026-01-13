@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/icon_home"
+        android:iconTint="#FFFFFF" />
+    <item
+        android:id="@+id/nav_request"
+        android:icon="@drawable/icon_request" />
+    <item
+        android:id="@+id/nav_maps"
+        android:icon="@drawable/icon_map" />
+    <item
+        android:id="@+id/nav_config"
+        android:icon="@drawable/icon_settings" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/icon_logout" />
+</menu>

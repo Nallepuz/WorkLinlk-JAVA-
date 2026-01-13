@@ -2,4 +2,13 @@
 <resources>
 
     <style name="Theme.WorkLink" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <style name="Theme.WorkLink.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.WorkLink.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.WorkLink.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

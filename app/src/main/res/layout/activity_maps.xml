@@ -32,23 +32,9 @@
                 android:id="@+id/texto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="MAPS"
                 android:textAlignment="center"
                 android:textColor="@color/design_default_color_error"
-                android:textSize="16sp" />
-
-            <CalendarView
-                android:id="@+id/calendarView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textTurno"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:gravity="center"
-                android:text="Selecciona un día"
-                android:textColor="@color/black"
                 android:textSize="16sp" />
 
         </LinearLayout>
