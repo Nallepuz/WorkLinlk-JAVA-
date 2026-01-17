@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,24 +20,19 @@
             app:titleCentered="true"
             app:titleTextColor="@android:color/white" />
 
-        <LinearLayout
-            android:id="@+id/home_content"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/texto"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvApplications"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MAPS"
-                android:textAlignment="center"
-                android:textColor="@color/design_default_color_error"
-                android:textSize="16sp" />
+                android:padding="16dp"
+                tools:listitem="@layout/item_aplication" />
 
-        </LinearLayout>
+        </ScrollView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/botNav"
@@ -46,7 +41,5 @@
             app:itemBackground="@color/design_default_color_error"
             app:itemTextColor="#F6F3F3"
             app:menu="@menu/bottom_menu" />
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
