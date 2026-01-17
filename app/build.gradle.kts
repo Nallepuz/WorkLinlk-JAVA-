@@ -67,4 +67,12 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     implementation("com.kizitonwose.calendar:view:2.6.0")
+    implementation("androidx.room:room-runtime:2.8.2")
+    annotationProcessor("androidx.room:room-compiler:2.8.2")
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation("com.mapbox.maps:android:10.16.1")
+    implementation("com.mapbox.plugin:maps-annotation:10.16.1")
+    implementation("com.mapbox.plugin:maps-gestures:10.16.1")
+
 }

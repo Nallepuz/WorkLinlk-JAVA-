@@ -16,42 +16,22 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="#B00020"
-            app:title="WorkLink"
+            app:title="@string/notas_worklink"
             app:titleCentered="true"
             app:titleTextColor="@android:color/white" />
 
-        <LinearLayout
-            android:id="@+id/home_content"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="8dp">
 
-            <TextView
-                android:id="@+id/textServerName"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNotes"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textColor="@color/design_default_color_error"
-                android:textSize="16sp" />
-
-            <CalendarView
-                android:id="@+id/calendarView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textTurno"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:gravity="center"
-                android:text="@string/selecciona_un_d_a"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-        </LinearLayout>
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </FrameLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/botNav"
